@@ -1,0 +1,489 @@
+:root {
+    --first-color: #1d1d1f;
+    --second-color: #cccaca;
+    --third-color: #fbfbfd;
+    --fourth-color: #0066cc;
+
+    --fs-small: .8rem;
+    --fs-medium: 1.5rem;
+    --fs-big: 3rem;
+    --fw-small: 400;
+}
+body {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+/* Navbar */
+header {
+    background: var(--first-color);
+    position: sticky;
+    top: 0;
+}
+.container {
+    width: min(90%, 70.5rem);
+    margin-inline: auto;
+}
+.apple-logo {
+    color: var(--second-color);
+    width: 15px;
+    height: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fs-small);
+}
+.nav-links li {
+    list-style: none;
+    padding: .5rem 1.2rem;
+}
+.nav-links li a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+/* Donate Message */
+.unicef {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--third-color);
+    padding: 1rem;
+    margin-top: 0;
+}
+.unicef h1 {
+    margin: 0;
+    padding-right: 1rem;
+}
+.unicef a {
+    color: var(--fourth-color);
+    text-decoration: none;
+    font-size: var(--fs-small);
+}
+/* Section 1 Content */
+.section-1-content {
+    background-image: url(/image/apple13.jpg);
+   background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+.whole-link-section {
+    padding: 5rem 0;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.section-1-content {
+    margin-top: 0;
+    padding-top: 1rem;
+    text-align: center;
+    color: var(--first-color);
+    line-height: 0.5rem;
+    
+}
+.section-1-content h1 {
+    padding-top: 0;
+    font-size: var(--fs-big);
+    color: var(--first-color);
+}
+.section-1-content p {
+    padding-top: .5rem;
+    font-size: var(--fs-medium);
+    color: var(--first-color);
+}
+.section-1-content a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--fourth-color);
+    margin-top: 0;
+}
+/* Section 2 Content */
+.section-2-content h1, p, a{
+    text-decoration: none;
+    color: var(--first-color);
+}
+.section-2-content {
+    background-image: url(/image/iphone-se.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    text-align: center;
+    line-height: 0.5rem;
+    padding-top: 2rem;
+}
+.section-2-content h1 {
+    font-size: var(--fs-big);
+}
+.section-2-content p {
+    color: black;
+}
+.section-2-content a {
+    color: var(--fourth-color);
+    font-size: 1.5rem;
+    padding: 0 0.7rem;
+}
+/* Section 3 Content */
+.section-3 {
+   background: black;
+}
+.section-3-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: min(80%, 80.5rem);
+    margin-inline: auto;
+    line-height: 0.5rem;
+    text-align: center;
+}
+.section-3-link h1 {
+    color: white;
+}
+.section-3-link h1 {
+    font-size: var(--fs-big);
+}
+.section-3-link p {
+    font-size: var(--fs-medium);
+    color: var(--third-color);
+}
+.section-3-content a {
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+    color: var(--fourth-color);
+}
+.ipad-air {
+    width: 60%;
+}
+
+.bg-img {
+    background-image: url(/image/ipad-air.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+}
+/* Section 4 content */
+.section-4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    padding-top: .8rem;
+    width: 100%;
+    text-align: center;
+    
+}
+.laptop-bg-img {
+    background-image: url(/image/wwdc22.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+.section-4-info h1 {
+    color: var(--third-color);
+font-size: 2.5rem;
+}
+.section-4-info {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 0.5rem;
+}
+.section-4-info p {
+    font-size: 1.5rem;
+    color: var(--third-color);
+}
+.learn-more {
+    color: var(--fourth-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+/* Apple Watch */
+.apple-watch {
+    background-image: url(/image/apple-watch-s7.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 50%;
+    line-height: 0.5rem;
+}
+.apple-watch h1 {
+    color: var(--first-color);
+    padding-top: 3rem;
+    font-size: 3rem;
+}
+.apple-watch a {
+    color: var(--fourth-color);
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+}
+.message {
+    color: var(--first-color);
+    font-size: 1.5rem;
+}
+.red-text {
+    color: red;
+    text-transform: uppercase;
+}
+/* Section 5, iPhone 13 & Studio Display*/
+.section-5 {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0.5rem;
+}
+.iphone-13 {
+    background-image: url(/image/Apple_iphone13.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 50%;
+    text-align: center;
+}
+.iphone-13 h1 {
+    color: var(--first-color);
+    font-size: var(--fs-big);
+    padding-top: 3rem;
+}
+.iphone-13 p {
+    color: var(--first-color);
+    font-size: 1.5rem;
+}
+.iphone-13 a {
+    color: var(--fourth-color);
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+}
+/* Studio Display */
+.studio-display {
+    background-image: url(/image/studio-display.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 50%;
+    text-align: center;
+}
+.studio-display h1 {
+    color: var(--first-color);
+    font-size: var(--fs-big);
+    padding-top: 3.2rem;
+}
+.studio-display p {
+    color: var(--first-color);
+    font-size: var(--fs-medium);
+}
+.studio-display a {
+    color: var(--fourth-color);
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+}
+/* Section 6, apple care, apple tv */
+.section-6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    line-height: .5rem;
+}
+.section-6 h1 {
+    color: var(--first-color);
+    font-size: var(--fs-big);
+    padding-top: 3rem;
+}
+.section-6 p {
+    color: var(--first-color);
+    font-size: var(--fs-medium);
+}
+.section-6 a {
+    color: var(--fourth-color);
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+}
+.card {
+    background-image: url(/image/apple-card.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+}
+.apple-tv {
+    background-image: url(/image/apple-tv);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.apple-tv h1 {
+    color: var(--third-color);
+}
+.apple-tv a {
+    font-size: 1.2rem;
+}
+/* Footer */
+footer {
+    height: 120vh;
+    font-size: .8rem;
+    background: var(--third-color);
+    padding: 1rem;
+}
+footer h3 {
+    text-align: left;
+}
+.footer-container {
+    width: min(85%, 70.5rem);
+    margin-inline: auto;
+}
+.footer-links {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   justify-content: space-between;
+    line-height: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+.footer-container::after {
+    content: "";
+    display: block;
+    height: .5px;
+    width: 100%;
+    background-color: black;
+}
+.footer-navlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-navlinks li {
+    list-style: none;
+    
+}
+.apple-info {
+    padding-top: 1rem;
+}
+.apple-info::after {
+content: "";
+background-color: black;
+display: block;
+height: .5px;
+width: 100%;
+}
+/* Copyright */
+.rights {
+    padding: 0 1rem;
+}
+.copyright-content {
+    width: min(85%, 70.5rem);
+    margin-inline: auto;
+
+}
+.copyright-container {
+    background: var(--third-color);
+    padding: 0;
+}
+.lines {
+    width: .5px;
+    height: .8rem;
+    background: black;
+    border: black;
+    display: inline-block;
+   
+}
+.copyright {
+    margin-top: 0;
+    padding: 0 1rem 1rem 1rem;
+}
+/* Media Query */
+@media (max-width: 1212px) {
+    .section-3-content {
+        flex-direction: column;
+    }
+    .ipad-air {
+        padding-bottom: 3rem;
+    }
+}
+@media (max-width: 1180px) {
+    .section-6 {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+   
+}
+@media (max-width: 860px) {
+    .section-3-content h1 {
+        font-size: 2rem;
+    }
+    .section-3-content p {
+        font-size: 1rem;
+    }
+    .section-3-content a {
+        font-size: 1rem;
+    }
+    .section-4 {
+        flex-direction: column;
+    }
+    /* Section 4 with laptop and apple watch */
+    .laptop-bg-img {
+        width: 100%;
+        height: 100vh;
+    }
+    .apple-watch {
+        height: 100vh;
+        width: 100%;
+    }
+    /* Section 5, iPhone 13 & Studio Display */
+    .section-5 {
+        flex-direction: column;
+        line-height: 0;
+    }
+    
+ }
+ @media (max-width: 690px) {
+     .studio-display h1 {
+         font-size: 2rem;
+     }
+     .iphone-13 h1 {
+         font-size: 2rem;
+     }
+ }
+@media (max-width: 570px) {
+    .card p {
+        line-height: 2rem;
+    }
+    .studio-display h1 {
+        font-size: 1.5rem;
+    }
+}
+
+ @media (max-width: 450px) {
+     .section-3-content p {
+         font-size: 0.7rem;
+     }
+     .section-3-content a {
+         font-size: 0.7rem;
+     }
+ }
