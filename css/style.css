@@ -22,7 +22,7 @@ header {
     top: 0;
 }
 .container {
-    width: min(90%, 70.5rem);
+    width: min(85%, 70.5rem);
     margin-inline: auto;
 }
 .apple-logo {
@@ -48,6 +48,20 @@ header {
 .nav-links li a {
     color: var(--second-color);
     text-decoration: none;
+}
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+.bars {
+    display: block;
+    width: 20px;
+    height: 1px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: var(--third-color);
 }
 /* Donate Message */
 .unicef {
@@ -399,11 +413,10 @@ width: 100%;
 .copyright-content {
     width: min(85%, 70.5rem);
     margin-inline: auto;
-
 }
 .copyright-container {
     background: var(--third-color);
-    padding: 0;
+    padding: 2rem 0;
 }
 .lines {
     width: .5px;
@@ -418,6 +431,35 @@ width: 100%;
     padding: 0 1rem 1rem 1rem;
 }
 /* Media Query */
+@media (max-width: 1230px) {
+  /*Navbar*/
+  .hamburger-menu {
+    display: block;
+}
+ /*Navbar*/
+ .navbar {
+     background-color: var(--first-color);
+ }
+ 
+ /*Nav Items*/
+ .nav-links {
+     flex-direction: column;
+     align-items: flex-start;
+     width: 100%;
+     font-size: 1.2rem;
+ }
+ .nav-link-container {
+     display: flex;
+     justify-content: flex-start;
+     flex-direction: column;
+ }
+ .nav-items {
+     display: none;
+ }
+ .cart {
+     align-items: flex-end;
+ }
+}
 @media (max-width: 1212px) {
     .section-3-content {
         flex-direction: column;
@@ -427,6 +469,7 @@ width: 100%;
     }
 }
 @media (max-width: 1180px) {
+  
     .section-6 {
         flex-direction: column;
         padding: 2rem 0;
@@ -453,7 +496,7 @@ width: 100%;
     }
     .apple-watch {
         height: 100vh;
-        width: 100%;
+        line-height: 0;
     }
     /* Section 5, iPhone 13 & Studio Display */
     .section-5 {

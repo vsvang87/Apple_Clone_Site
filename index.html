@@ -20,34 +20,38 @@
     <header>
       <div class="container">
         <nav class="navbar">
-          <ul class="nav-links">
+          <!--Hamburger Menu-->
+          <div class="hamburger-menu" id="hamburger-menu">
+            <span class="bars"></span>
+            <span class="bars"></span>
+            <span class="bars"></span>
+          </div>
+          <!--Apple Logo-->
+          <div class="logo-container">
             <a href="#">
               <img
                 class="apple-logo"
                 src="/image/apple-logo.svg"
                 alt="apple logo"
             /></a>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">Mac</a></li>
-            <li><a href="#">iPad</a></li>
-            <li><a href="#">iPhone</a></li>
-            <li><a href="#">Watch</a></li>
-            <li><a href="#">AirPods</a></li>
-            <li><a href="#">TV & Home</a></li>
-            <li><a href="#">Only on Apple</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Support</a></li>
-            <!--Search Icon-->
-            <span class="search"
-              ><a href="#"
-                ><i class="fa fa-magnifying-glass">Search</i></a
-              ></span
-            >
-            <!--Shopping Cart-->
-            <span class="cart"
-              ><a href="#"><i class="fa fa-bag-shopping">Cart</i></a></span
-            >
-          </ul>
+          </div>
+
+          <div class="nav-link-container">
+            <ul class="nav-links">
+              <li class="nav-items"><a href="#">Store</a></li>
+              <li class="nav-items"><a href="#">Mac</a></li>
+              <li class="nav-items"><a href="#">iPad</a></li>
+              <li class="nav-items"><a href="#">iPhone</a></li>
+              <li class="nav-items"><a href="#">Watch</a></li>
+              <li class="nav-items"><a href="#">AirPods</a></li>
+              <li class="nav-items"><a href="#">TV & Home</a></li>
+              <li class="nav-items"><a href="#">Only on Apple</a></li>
+              <li class="nav-items"><a href="#">Accessories</a></li>
+              <li class="nav-items"><a href="#">Support</a></li>
+              <li class="nav-items"><a href="#">Search</a></li>
+              <li class="cart"><a href="#">Cart</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -255,24 +259,27 @@
           </div>
         </div>
       </div>
-    </footer>
-    <div class="copyright-container">
-      <div class="copyright-content">
-        <div class="copyright">
-          <span class="inc"
-            >Copyright @ 2022 Apple Inc. All rights reserved.</span
-          >
-          <span class="rights privacy"><a href="#">Privacy Policy</a></span>
-          <span class="lines"></span>
-          <span class="rights terms"><a href="#">Terms of Use</a></span>
-          <span class="lines"></span>
-          <span class="rights sales"><a href="#">Sales and Refunds</a></span>
-          <span class="lines"></span>
-          <span class="rights legal"><a href="#">Legal</a></span>
-          <span class="lines"></span>
-          <span class="rights site-map"><a href="#">Site Map</a> </span>
+      <!--Copyright Section-->
+      <div class="copyright-container">
+        <div class="copyright-content">
+          <div class="copyright">
+            <span class="inc"
+              >Copyright @ 2022 Apple Inc. All rights reserved.</span
+            >
+            <span class="rights privacy"><a href="#">Privacy Policy</a></span>
+            <span class="lines"></span>
+            <span class="rights terms"><a href="#">Terms of Use</a></span>
+            <span class="lines"></span>
+            <span class="rights sales"><a href="#">Sales and Refunds</a></span>
+            <span class="lines"></span>
+            <span class="rights legal"><a href="#">Legal</a></span>
+            <span class="lines"></span>
+            <span class="rights site-map"><a href="#">Site Map</a> </span>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
+
+    <script src="/js/appleclonesite.js"></script>
   </body>
 </html>
